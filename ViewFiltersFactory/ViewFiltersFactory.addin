@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+	<Name>View Filters Factory</Name>
+	<Assembly>ViewFiltersFactory\ViewFiltersFactory.dll</Assembly>
+	<FullClassName>ViewFiltersFactory.RibbonUI</FullClassName>
+	<ClientId>A164F0B0-FF49-4758-A26C-F30749AC78C6</ClientId>
+	<VendorId>GCRA010</VendorId>
+	<VendorDescription>BH</VendorDescription>
+	</AddIn>
+</RevitAddIns>

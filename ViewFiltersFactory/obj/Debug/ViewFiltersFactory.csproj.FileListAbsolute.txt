@@ -1,0 +1,10 @@
+C:\Users\galbieri\OneDrive - Buro Happold\Structures\10_Computational\HOI\Revit API Plugins\ViewFiltersFactory\ViewFiltersFactory\bin\Debug\ViewFiltersFactory.dll
+C:\Users\galbieri\OneDrive - Buro Happold\Structures\10_Computational\HOI\Revit API Plugins\ViewFiltersFactory\ViewFiltersFactory\bin\Debug\ViewFiltersFactory.pdb
+C:\Users\galbieri\OneDrive - Buro Happold\Structures\10_Computational\HOI\Revit API Plugins\ViewFiltersFactory\ViewFiltersFactory\bin\Debug\CSiAPIv1.dll
+C:\Users\galbieri\OneDrive - Buro Happold\Structures\10_Computational\HOI\Revit API Plugins\ViewFiltersFactory\ViewFiltersFactory\bin\Debug\CSiDetailAPI.dll
+C:\Users\galbieri\OneDrive - Buro Happold\Structures\10_Computational\HOI\Revit API Plugins\ViewFiltersFactory\ViewFiltersFactory\bin\Debug\ETABSv1.dll
+C:\Users\galbieri\OneDrive - Buro Happold\Structures\10_Computational\HOI\Revit API Plugins\ViewFiltersFactory\ViewFiltersFactory\obj\Debug\ViewFiltersFactory.csproj.AssemblyReference.cache
+C:\Users\galbieri\OneDrive - Buro Happold\Structures\10_Computational\HOI\Revit API Plugins\ViewFiltersFactory\ViewFiltersFactory\obj\Debug\ViewFiltersFactory.csproj.CoreCompileInputs.cache
+C:\Users\galbieri\OneDrive - Buro Happold\Structures\10_Computational\HOI\Revit API Plugins\ViewFiltersFactory\ViewFiltersFactory\obj\Debug\ViewFiltersFactory.csproj.CopyComplete
+C:\Users\galbieri\OneDrive - Buro Happold\Structures\10_Computational\HOI\Revit API Plugins\ViewFiltersFactory\ViewFiltersFactory\obj\Debug\ViewFiltersFactory.dll
+C:\Users\galbieri\OneDrive - Buro Happold\Structures\10_Computational\HOI\Revit API Plugins\ViewFiltersFactory\ViewFiltersFactory\obj\Debug\ViewFiltersFactory.pdb

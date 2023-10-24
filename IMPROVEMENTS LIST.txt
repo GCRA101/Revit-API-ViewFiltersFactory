@@ -1,0 +1,2 @@
+1. Add Try Catch Statements profusely as suggested by Revit API guide
+2. Separate Factory Classes from Main Class putting them into separate class files

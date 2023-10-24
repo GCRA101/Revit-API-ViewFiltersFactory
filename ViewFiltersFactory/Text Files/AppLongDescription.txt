@@ -1,0 +1,1 @@
+The tool collects all the frame section families used in the model and creates a view filter for each of them, assigned with a different color and applied to the view currently active
