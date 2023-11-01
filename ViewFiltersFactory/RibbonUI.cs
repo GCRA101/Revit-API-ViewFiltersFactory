@@ -4,8 +4,8 @@ using System;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.Attributes;
-
-
+using System.IO;
+using System.Reflection;
 
 namespace ViewFiltersFactory
 {
@@ -15,7 +15,7 @@ namespace ViewFiltersFactory
         /* ATTRIBUTES */
         //private String projectFolderPath = System.IO.Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).FullName;
         private String projectFolderPath = "c:\\Users\\galbieri\\OneDrive - Buro Happold\\Structures\\10_Computational\\HOI\\Revit API Plugins\\ViewFiltersFactory\\ViewFiltersFactory\\";
-        private String imagesFolderPath, textFolderPath;
+
         private RibbonPanel ribbonPanel;
 
 
@@ -36,13 +36,12 @@ namespace ViewFiltersFactory
                 //2. Create new RibbonTab Panel
                 ribbonPanel = RibbonTabPanelFactory.getInstance().create(application, "BH Plugins", "View Filters");
                 //3. Buildup Inputs for RibbonItemFactory
-                imagesFolderPath = this.projectFolderPath + "Images\\";
-                textFolderPath = this.projectFolderPath + "Text Files\\";
-                String imagePath = imagesFolderPath + "AppLogo64x64.png";
-                String largeImagePath = imagesFolderPath + "AppLogo96x96.png";
-                String toolTipImagePath = imagesFolderPath + "AppLogo.png";
+                String imagePath = "ViewFiltersFactory.AppLogo64x64.png";
+                String largeImagePath = "ViewFiltersFactory.AppLogo96x96.png";
+                String toolTipImagePath = "ViewFiltersFactory.AppLogo.png";
                 String toolTipText = "View Filters Factory";
-                String longDescription = System.IO.File.ReadAllText(textFolderPath + "AppLongDescription.txt");
+                String longDescriptionFilePath = "ViewFiltersFactory.AppLongDescription.txt";
+                String longDescription = new StreamReader(Assembly.GetExecutingAssembly().GetManifestResourceStream(longDescriptionFilePath)).ReadToEnd();
                 String assemblyFullPath = projectFolderPath + "bin\\Debug\\ViewFiltersFactory.dll";
                 String className = "ViewFiltersFactory.Command";
                 //4. Create RibbonItem (PushButton)

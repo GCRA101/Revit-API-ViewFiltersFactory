@@ -1,10 +1,13 @@
 ﻿/* IMPORT LIBRARIES */
 using System;
+using System.IO;
+using System.Reflection;
 // Libraries for UI Buttons/Panels
 using System.Windows.Media.Imaging;
+using System.Drawing;
 // Libraries for Revit
 using Autodesk.Revit.UI;
-
+using System.Windows.Media;
 
 namespace ViewFiltersFactory
 {
@@ -61,9 +64,11 @@ namespace ViewFiltersFactory
 
             PushButton pushButton = (PushButton)tabPanel.AddItem(pushButtonData);
 
-            pushButton.Image = new BitmapImage(new Uri(imagePath));
-            pushButton.LargeImage = new BitmapImage(new Uri(largeImagePath));
-            pushButton.ToolTipImage = new BitmapImage(new Uri(toolTipImagePath));
+
+
+            pushButton.Image = BitmapImageFactory.getInstance().create(imagePath);
+            pushButton.LargeImage = BitmapImageFactory.getInstance().create(largeImagePath);
+            pushButton.ToolTipImage = BitmapImageFactory.getInstance().create(toolTipImagePath);
             pushButton.ToolTip = toolTipText;
             pushButtonData.LongDescription = longDescription;
 

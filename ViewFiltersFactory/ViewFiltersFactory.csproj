@@ -55,6 +55,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -66,6 +67,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitmapImageFactory.cs" />
     <Compile Include="ColorPalette.cs" />
     <Compile Include="ColorsFactory.cs" />
     <Compile Include="Command.cs" />
@@ -74,6 +76,14 @@
     <Compile Include="RibbonItemFactory.cs" />
     <Compile Include="RibbonTabPanelFactory.cs" />
     <Compile Include="RibbonUI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppLogo.png" />
+    <EmbeddedResource Include="AppLogo64x64.png" />
+    <EmbeddedResource Include="AppLogo96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppLongDescription.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
