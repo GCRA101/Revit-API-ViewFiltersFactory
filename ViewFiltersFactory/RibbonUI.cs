@@ -42,7 +42,7 @@ namespace ViewFiltersFactory
                 String toolTipText = "View Filters Factory";
                 String longDescriptionFilePath = "ViewFiltersFactory.AppLongDescription.txt";
                 String longDescription = new StreamReader(Assembly.GetExecutingAssembly().GetManifestResourceStream(longDescriptionFilePath)).ReadToEnd();
-                String assemblyFullPath = projectFolderPath + "bin\\Debug\\ViewFiltersFactory.dll";
+                String assemblyFullPath = Assembly.GetExecutingAssembly().Location;
                 String className = "ViewFiltersFactory.Command";
                 //4. Create RibbonItem (PushButton)
                 RibbonItemFactory.getInstance().create(ribbonPanel, RibbonItemType.PushButton, "View Filters\n Factory", imagePath,
