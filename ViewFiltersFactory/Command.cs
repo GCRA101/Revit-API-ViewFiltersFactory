@@ -150,7 +150,15 @@ namespace ViewFiltersFactory
                         filterRules.Add(ParameterFilterRuleFactory.CreateEqualsRule(new ElementId(BuiltInParameter.ALL_MODEL_TYPE_NAME), sectionName, false));
                         elParamFilters.Add(new ElementParameterFilter(filterRules[i]));
                         filters[i].SetElementFilter(new LogicalAndFilter(elParamFilters));
-                        activeView.AddFilter(filters[i].Id);
+                        activeView.AddFilter(filters[i].Id);}
+                    else
+                    {
+                        activeView.AddFilter(new FilteredElementCollector(doc).
+                            OfClass(typeof(ParameterFilterElement)).
+                            ToElements().
+                            Where(elFilter => elFilter.Name == sectionName).
+                            Select(elFilter => elFilter.Id).
+                            First());
                     }
                 }
 
