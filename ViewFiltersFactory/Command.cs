@@ -115,7 +115,7 @@ namespace ViewFiltersFactory
                 /*4.CREATE COLORS PALETTE FOR VIEW FILTERS */
 
                 List<Autodesk.Revit.DB.Color> colors = new List<Autodesk.Revit.DB.Color>();
-                colors=ColorsFactory.getInstance().create(ColorPalette.RAINBOW, sectionNames.Count());
+                colors=ColorsFactory.getInstance().create(ColorPalette.RANDOM, sectionNames.Count());
 
 
                 /*5. GET THE ACTIVE VIEW */

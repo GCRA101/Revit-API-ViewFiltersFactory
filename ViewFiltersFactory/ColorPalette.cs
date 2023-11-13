@@ -6,7 +6,7 @@ namespace ViewFiltersFactory
 {
     public enum ColorPalette
     {
-        RAINBOW, LINEAR, SINUSOIDAL
+        RAINBOW, RANDOM, LINEAR, SINUSOIDAL
     }
 
 
